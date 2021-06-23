@@ -2,7 +2,7 @@ import Head from "next/head";
 import ContentCard from "../components/ContentCard";
 import Avatar from "../components/Avatar";
 import picture from "../public/images/my-portrait-patrick-williams.jpg";
-import WhatshotIcon from '@material-ui/icons/Whatshot';
+import skiPicture from "../public/images/alex-gomes-ski.jpg";
 import styles from "../styles/pages/About.module.css";
 
 const About = () => {
@@ -35,7 +35,7 @@ const About = () => {
             <ContentCard isImage>
               <Avatar
                 image={picture}
-                alt={"Picture of an alley in Japan"}
+                alt={"Picture of Alex Gomes"}
                 variant={"rounded"}
               />
               <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
@@ -43,7 +43,7 @@ const About = () => {
                   <li>HTML</li>
                   <li>
                     CSS{" "}
-                    <ul style={{ listStyle: 'outside' }}>
+                    <ul style={{ listStyle: "outside" }}>
                       <li>BEM</li>
                       <li>CSS Modules</li>
                       <li>Material-UI</li>
@@ -70,14 +70,31 @@ const About = () => {
             <ContentCard title={"Education"}>
               <p>
                 In 2016, I graduated from Concordia University in Montreal with
-                a bachelor's degree in Commerce, majoring in Finance. Most of my
-                programming knowledge comes from online courses, tutorials and
-                working on personal and freelance projects. I'm always looking
-                for new courses to improve my set of skills.
+                a bachelor's degree in Commerce, majoring in Finance. Before
+                University, I completed a two year vocational program in
+                Automotive Mechanics. 
               </p>
             </ContentCard>
+            <ContentCard title={"Experience"} mgtop={"2rem"}>
+              <p>
+                Most of my experience in programming comes from personal
+                projects, course projects, tutorials and freelance projects. I
+                am yet to work as part of a team and have no experience working
+                on any colaborative projects.
+              </p>
+            </ContentCard>
+            <ContentCard isImage mgtop={"2rem"}>
+              <Avatar
+                image={skiPicture}
+                alt={"Picture of Alex Skiing"}
+                variant={"rounded"}
+              />
+            </ContentCard>
             <ContentCard title={"Hobbies"} mgtop={"2rem"}>
-              <p>Skiing, Ice Hockey, Football, Cooking, Travelling, Reading</p>
+              <p>
+                Skiing, Ice Hockey, Football, Cooking, Travelling, Reading,
+                Coding
+              </p>
             </ContentCard>
           </div>
         </div>

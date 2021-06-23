@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.iconBox {
+    display: flex;
+    flex: 0.5;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    color: #f04854;
+}
