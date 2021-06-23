@@ -4,11 +4,27 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 * {

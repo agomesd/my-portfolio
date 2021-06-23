@@ -1,0 +1,15 @@
+.container {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.circle {
+    border-radius: 999px;
+}
+
+.rounded {
+    height: auto;
+    width: auto;
+    border-radius: 8px;
+}
