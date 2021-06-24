@@ -64,6 +64,13 @@ const About = () => {
                   <li>Git</li>
                 </ul>
               </ContentCard>
+              <ContentCard title={'Languages'} mgtop={'2rem'}>
+                <ul>
+                    <li>English - C2 Fluent Bilingual</li>
+                    <li>French - C2 Fluent Bilingual</li>
+                    <li>Portuguese - B1 Intermediate</li>
+                </ul>
+              </ContentCard>
             </ContentCard>
           </div>
           <div className={styles.flexbox}>
