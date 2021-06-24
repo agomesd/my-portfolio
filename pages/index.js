@@ -7,7 +7,7 @@ const Home = () => {
       <div className={styles.container}>
         <Head>
           <title>Alex Gomes</title>
-          <meta name="description" content="Alex Gomes portfolio" />
+          <meta name="description" content="Alex Gomes personal portfolio website" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1
