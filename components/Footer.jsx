@@ -11,10 +11,34 @@ const Footer = () => {
         <p>© 2021 all rights reserved</p>
       </div>
       <div className={styles.iconBox}>
-        <GitHubIcon className={styles.icon}/>
-        <LinkedInIcon className={styles.icon}/>
-        <FacebookIcon className={styles.icon}/>
-        <InstagramIcon className={styles.icon}/>
+        <a
+          href="https://github.com/agomesd/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <GitHubIcon className={styles.icon} fontSize={"large"} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alexandre-gomes-duguay-90128b5a/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <LinkedInIcon className={styles.icon} fontSize={"large"} />
+        </a>
+        <a
+          href="https://www.facebook.com/alex.gomes.378"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <FacebookIcon className={styles.icon} fontSize={"large"} />
+        </a>
+        <a
+          href="https://www.instagram.com/glengomerson/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <InstagramIcon className={styles.icon} fontSize={"large"} />
+        </a>
       </div>
     </div>
   );

@@ -17,4 +17,10 @@
 
 .icon {
     color: #f04854;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in;
 }
