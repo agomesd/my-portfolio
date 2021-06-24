@@ -7,7 +7,10 @@ const Home = () => {
       <div className={styles.container}>
         <Head>
           <title>Alex Gomes</title>
-          <meta name="description" content="Alex Gomes personal portfolio website" />
+          <meta
+            name="description"
+            content="Alex Gomes personal portfolio website"
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1
@@ -20,7 +23,8 @@ const Home = () => {
         </h1>
         <h2 className={styles.header}>
           I'm Alex, a full-stack web developer from Montreal Canada currently
-          living in Portugal.{" "}
+          living in Portugal. This is a website showcasing my portfolio. Please get in touch if
+          you'd like to work with me.
         </h2>
       </div>
     </div>

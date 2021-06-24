@@ -23,8 +23,9 @@ const Portfolio = () => {
           <ProjectCard
             title={"SoopaShop"}
             url={"https://gwd-ecommerce-next.netlify.app/"}
+            repo_url={"https://github.com/agomesd/jamstack-ecom"}
             description={
-              "A dynamic e-commerce website built with Next.js and Stripe, hosted on netlify styled with Styled Components. Project built from Jon Meyer's tutorial."
+              "An e-commerce webapp built with Next.js and Stripe, hosted on netlify styled with Styled Components. Project built from Jon Meyer's tutorial."
             }
           />
         </div>

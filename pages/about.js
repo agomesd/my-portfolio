@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Head from "next/head";
 import ContentCard from "../components/ContentCard";
 import Avatar from "../components/Avatar";
@@ -18,17 +19,26 @@ const About = () => {
         <div className={styles.grid}>
           <ContentCard gcs={"1"} gce={"3"}>
             <p>
-              Bacon ipsum dolor amet short ribs shankle landjaeger tenderloin
-              chislic meatball. Corned beef bresaola meatball jowl pig porchetta
-              pastrami short loin. Kielbasa pastrami frankfurter tri-tip short
-              loin strip steak ham hock boudin venison, spare ribs tongue cupim
-              landjaeger tail. Chuck bacon ground round shankle boudin beef
-              short ribs. Shank beef ribs hamburger ground round short ribs,
-              pancetta ball tip capicola frankfurter alcatra burgdoggen venison
-              doner. Tri-tip chicken meatloaf shankle hamburger corned beef
-              leberkas jerky. Tongue pork belly ribeye doner pig turkey
-              frankfurter bacon jerky ham hock jowl tenderloin burgdoggen
-              pancetta kevin.
+              I'm Alex, a full-stack web developer from Montreal Canada. I'm
+              currently living in Portugal and looking for work. I've been
+              learning to code for the past year with the use of online courses
+              and tutorials. You can find some of my personal and freelance
+              projects in the{" "}
+              <span>
+                <Link href="/portfolio">
+                  <a style={{ color: "#f04854" }}>Portfolio</a>
+                </Link>
+              </span>{" "}
+              section of this website. I'm a quick learner and a team player
+              with an open mind to new ideas. I'm looking to join a team that
+              fosters growth and creativity. If I seem to have what you are
+              looking for, please{" "}
+              <span>
+                <Link href="/contact">
+                  <a style={{ color: '#f04854' }}>Get In Touch</a>
+                </Link>
+              </span>
+              . I hope to hear from you soon!
             </p>
           </ContentCard>
           <div className={styles.flexbox}>
@@ -62,13 +72,14 @@ const About = () => {
                   <li>PostgreSQL</li>
                   <li>RESTful API</li>
                   <li>Git</li>
+                  <li>Netlify</li>
                 </ul>
               </ContentCard>
-              <ContentCard title={'Languages'} mgtop={'2rem'}>
+              <ContentCard title={"Languages"} mgtop={"2rem"}>
                 <ul>
-                    <li>English - C2 Fluent Bilingual</li>
-                    <li>French - C2 Fluent Bilingual</li>
-                    <li>Portuguese - B1 Intermediate</li>
+                  <li>English - C2 Fluent Bilingual</li>
+                  <li>French - C2 Fluent Bilingual</li>
+                  <li>Portuguese - B1 Intermediate</li>
                 </ul>
               </ContentCard>
             </ContentCard>
@@ -79,7 +90,7 @@ const About = () => {
                 In 2016, I graduated from Concordia University in Montreal with
                 a bachelor's degree in Commerce, majoring in Finance. Before
                 University, I completed a two year vocational program in
-                Automotive Mechanics. 
+                Automotive Mechanics.
               </p>
             </ContentCard>
             <ContentCard title={"Experience"} mgtop={"2rem"}>

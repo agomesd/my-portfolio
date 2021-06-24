@@ -13,9 +13,11 @@ const ProjectCard = ({ title, url, description, repo_url }) => {
       <a href={url} target="_blank" rel="noreferrer noopener">
         Go to site <LaunchIcon style={{ marginLeft: "1rem" }} />
       </a>
-      <a href={repo_url} target="_blank" rel="noreferrer noopener">
-        Go to Repository <GitHubIcon style={{ marginLeft: "1rem" }} />
-      </a>
+      {repo_url && (
+        <a href={repo_url} target="_blank" rel="noreferrer noopener">
+          Go to Repository <GitHubIcon style={{ marginLeft: "1rem" }} />
+        </a>
+      )}
     </div>
   );
 };
