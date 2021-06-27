@@ -24,7 +24,14 @@ const Contact = () => {
     <div className={styles.contact}>
       <div className={styles.container}>
         <h1 className={styles.header}>Contact.</h1>
-        <form className={styles.form} data-netlify='true' name="contact">
+        <form
+          className={styles.form}
+          data-netlify="true"
+          name="contact"
+          netlify-honeypot="honeypot"
+          data-netlify-recaptcha="true"
+        >
+          <input className={styles.hidden} name="honeypot" />
           <input
             className={styles.textfield}
             name="name"
@@ -60,6 +67,7 @@ const Contact = () => {
             onChange={handleInputChange}
             value={message}
           />
+          <div data-netlify-recaptcha="true"></div>
           <button className={styles.button} type="submit">
             Send
           </button>
