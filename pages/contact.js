@@ -24,7 +24,7 @@ const Contact = () => {
     <div className={styles.contact}>
       <div className={styles.container}>
         <h1 className={styles.header}>Contact.</h1>
-        <form className={styles.form} netlify name="contact">
+        <form className={styles.form} data-netlify='true' name="contact">
           <input
             className={styles.textfield}
             name="name"
