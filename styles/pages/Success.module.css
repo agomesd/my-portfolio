@@ -1,0 +1,20 @@
+.success {
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 6rem 0;
+  width: 760px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: #fff;
+  font-size: 3rem;
+}
