@@ -32,7 +32,7 @@ const Contact = () => {
           data-netlify-recaptcha="true"
           method="POST"
           hidden
-          enctype='application/x-www-form-urlencoded'
+          encType='application/x-www-form-urlencoded'
         >
           <input type="hidden" name="contact" value="contact" />
           <input className={styles.hidden} name="honeypot" />
