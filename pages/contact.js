@@ -32,6 +32,7 @@ const Contact = () => {
           data-netlify-recaptcha="true"
           method="POST"
           hidden
+          enctype='application/x-www-form-urlencoded'
         >
           <input type="hidden" name="contact" value="contact" />
           <input className={styles.hidden} name="honeypot" />
@@ -70,7 +71,7 @@ const Contact = () => {
             onChange={handleInputChange}
             value={message}
           />
-          <div data-netlify-recaptcha="true"></div>
+          <div netlify-recaptcha="true"></div>
           <button className={styles.button} type="submit">
             Send
           </button>
