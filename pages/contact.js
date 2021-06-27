@@ -37,37 +37,37 @@ const Contact = () => {
           <input
             className={styles.textfield}
             name="name"
-            id="name"
             type="text"
             placeholder="Full name."
             onChange={handleInputChange}
             value={name}
+            required
           />
           <input
             className={styles.textfield}
             name="email"
-            id="email"
             type="email"
             placeholder="Email."
             onChange={handleInputChange}
             value={email}
+            required
           />
           <input
             className={styles.textfield}
             name="subject"
-            id="subject"
             type="text"
             placeholder="Subject."
             onChange={handleInputChange}
             value={subject}
+            required
           />
           <textarea
             className={styles.textfield}
             name="message"
-            id="message"
             placeholder="Message."
             onChange={handleInputChange}
             value={message}
+            required
           ></textarea>
           <div netlify-recaptcha="true"></div>
           <button className={styles.button} type="submit">
