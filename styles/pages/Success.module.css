@@ -1,5 +1,5 @@
 .success {
-  background-image: url("");
+  background-image: url("../../public/images/connor-home-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -14,7 +14,16 @@
   flex-direction: column;
 }
 
+.textbox {
+    margin-top: 6rem;
+    background-color: rgba(0,0,0,0.75);
+    padding: 0 2rem;
+    border-radius: 6px;
+}
+
 .header {
   color: #fff;
   font-size: 3rem;
 }
+
+
