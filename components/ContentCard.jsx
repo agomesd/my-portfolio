@@ -8,6 +8,7 @@ const ContentCard = ({
   gce,
   grs,
   gre,
+  mg,
   mgtop,
 }) => {
   return (
@@ -19,6 +20,7 @@ const ContentCard = ({
         gridRowStart: grs,
         gridRowEnd: gre,
         marginTop: mgtop,
+        margin: mg
       }}
     >
       {title && <h1 className={styles.header}>{title}</h1>}
