@@ -30,7 +30,10 @@ const Contact = () => {
           name="contact"
           netlify-honeypot="honeypot"
           data-netlify-recaptcha="true"
+          method="POST"
+          hidden
         >
+          <input type="hidden" name="contact" value="contact" />
           <input className={styles.hidden} name="honeypot" />
           <input
             className={styles.textfield}
