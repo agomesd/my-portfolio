@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import styles from "../styles/pages/Contact.module.css";
 
 const initialState = {
@@ -20,6 +21,30 @@ const Contact = () => {
     }));
   };
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = { name, email, subject, message };
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
+    };
+
+    fetch("/", options)
+      .then((res) => {
+        window.location.assign("/success/");
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className={styles.contact}>
       <div className={styles.container}>
@@ -28,12 +53,11 @@ const Contact = () => {
           className={styles.form}
           name="contact"
           data-netlify="true"
-          netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
-          method="POST"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="bot-field" />
-          <input type='hidden' name='form-name' value='contact'/>
+          <input type="hidden" name="form-name" value="contact" />
           <input
             className={styles.textfield}
             name="name"
@@ -69,7 +93,6 @@ const Contact = () => {
             value={message}
             required
           ></textarea>
-          <div netlify-recaptcha="true"></div>
           <button className={styles.button} type="submit">
             Send
           </button>
