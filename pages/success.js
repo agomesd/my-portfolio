@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Head from 'next/head';
 import Link from 'next/link';
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import styles from "../styles/pages/Success.module.css";
@@ -17,6 +18,14 @@ const Success = () => {
   return (
     <div className={styles.success}>
       <div className={styles.container}>
+      <Head>
+          <title>Success!</title>
+          <meta
+            name="description"
+            content="Form submission success page"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className={styles.textbox}>
           <h1 className={styles.header}>
             Success!

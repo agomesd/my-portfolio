@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import Head from 'next/head';
 import styles from "../styles/pages/Contact.module.css";
 
 const initialState = {
@@ -48,6 +48,14 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <div className={styles.container}>
+      <Head>
+          <title>Get in touch.</title>
+          <meta
+            name="description"
+            content="Alex Gomes contact page"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <h1 className={styles.header}>Contact.</h1>
         <form
           className={styles.form}
