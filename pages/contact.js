@@ -34,7 +34,6 @@ const Contact = () => {
           hidden
           encType='application/x-www-form-urlencoded'
         >
-          <input type="hidden" name="contact" value="contact" />
           <input className={styles.hidden} name="honeypot" />
           <input
             className={styles.textfield}
