@@ -61,3 +61,11 @@
 .hidden {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+}

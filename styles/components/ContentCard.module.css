@@ -7,3 +7,15 @@
 .header {
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .container ul {
+        text-align: left;
+    }
+}

@@ -44,6 +44,10 @@
 }
 
 @media (max-width: 599px) {
+    .container {
+        padding: 1rem;
+    }
+    
     .links {
         display: none;
     }

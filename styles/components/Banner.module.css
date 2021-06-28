@@ -35,13 +35,16 @@
 
 @media (max-width: 599px) {
   .container {
-    display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    height: auto;
   }
 
   .image {
     width: 100%;
     position: unset;
+    margin: 0.5rem 0;
   }
 
   .image1 {

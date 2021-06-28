@@ -49,6 +49,14 @@ const About = () => {
                 variant={"rounded"}
               />
             </ContentCard>
+            <button className={styles.button}>
+              <a
+                href="https://my.indeed.com/p/alexandreg-0orcb4n/pdf"
+                download="alex-gomes-cv"
+              >
+                Download CV
+              </a>
+            </button>
             <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
               <ul className={styles.list}>
                 <li>HTML</li>
@@ -83,14 +91,6 @@ const About = () => {
                 <li>Portuguese - B1 Intermediate</li>
               </ul>
             </ContentCard>
-            <button className={styles.button}>
-              <a
-                href="https://my.indeed.com/p/alexandreg-0orcb4n/pdf"
-                download="alex-gomes-cv"
-              >
-                Download CV
-              </a>
-            </button>
           </div>
           <div className={styles.flexbox}>
             <ContentCard title={"Education"}>

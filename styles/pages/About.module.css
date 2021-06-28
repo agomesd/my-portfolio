@@ -15,22 +15,23 @@
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
 }
 
 .header {
-    color: #fff;
-    font-size: 3rem;
+  color: #fff;
+  font-size: 3rem;
 }
 
 .button {
-  margin-top: 2rem;
+  margin: 2rem 0;
   width: 100%;
   background-color: transparent;
   color: #fff;
   padding: 1rem 2rem;
+  border: 1px solid #fff;
   border-radius: 6px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -39,4 +40,16 @@
 .button:hover {
   border: 1px solid #f04854;
   background-color: #f04854;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

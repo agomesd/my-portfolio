@@ -39,3 +39,33 @@
     bottom: 1rem;
     right: 3rem;
 }
+
+@media (max-width: 600px) {
+    .container {
+        text-align: left;
+        padding: 0;
+    }
+
+    .header {
+        padding: 0 1rem;
+    }
+
+    .iframe {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+
+    .container a {
+        padding: 0 1rem;
+    }
+
+    .status {
+        position: unset;
+        margin: 0;
+        padding: 1rem;
+    }
+
+}

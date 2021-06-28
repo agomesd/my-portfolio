@@ -24,3 +24,12 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
