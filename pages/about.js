@@ -19,11 +19,9 @@ const About = () => {
         <div className={styles.grid}>
           <ContentCard gcs={"1"} gce={"3"}>
             <p>
-              I'm Alex, a full-stack web developer from Montreal Canada. I'm
-              currently living in Portugal and looking for work. I've been
-              learning to code for the past year with the use of online courses
-              and tutorials. You can find some of my personal and freelance
-              projects in the{" "}
+              I've been learning to code for the past year with the use of
+              online courses and tutorials. You can find some of my personal and
+              freelance projects in the{" "}
               <span>
                 <Link href="/portfolio">
                   <a style={{ color: "#f04854" }}>Portfolio</a>
