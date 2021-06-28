@@ -35,7 +35,7 @@ const About = () => {
               looking for, please{" "}
               <span>
                 <Link href="/contact">
-                  <a style={{ color: '#f04854' }}>Get In Touch</a>
+                  <a style={{ color: "#f04854" }}>Get In Touch</a>
                 </Link>
               </span>
               . I hope to hear from you soon!
@@ -48,41 +48,49 @@ const About = () => {
                 alt={"Picture of Alex Gomes"}
                 variant={"rounded"}
               />
-              <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
-                <ul className={styles.list}>
-                  <li>HTML</li>
-                  <li>
-                    CSS{" "}
-                    <ul style={{ listStyle: "outside" }}>
-                      <li>BEM</li>
-                      <li>CSS Modules</li>
-                      <li>Material-UI</li>
-                      <li>Styled Components</li>
-                    </ul>
-                  </li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Next.js</li>
-                  <li>Node.js</li>
-                  <li>Supabase</li>
-                  <li>Firebase</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>PostgreSQL</li>
-                  <li>RESTful API</li>
-                  <li>Git</li>
-                  <li>Netlify</li>
-                </ul>
-              </ContentCard>
-              <ContentCard title={"Languages"} mgtop={"2rem"}>
-                <ul>
-                  <li>English - C2 Fluent Bilingual</li>
-                  <li>French - C2 Fluent Bilingual</li>
-                  <li>Portuguese - B1 Intermediate</li>
-                </ul>
-              </ContentCard>
             </ContentCard>
+            <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
+              <ul className={styles.list}>
+                <li>HTML</li>
+                <li>
+                  CSS{" "}
+                  <ul style={{ listStyle: "outside" }}>
+                    <li>BEM</li>
+                    <li>CSS Modules</li>
+                    <li>Material-UI</li>
+                    <li>Styled Components</li>
+                  </ul>
+                </li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Supabase</li>
+                <li>Firebase</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>RESTful API</li>
+                <li>Git</li>
+                <li>Netlify</li>
+              </ul>
+            </ContentCard>
+            <ContentCard title={"Languages"} mgtop={"2rem"}>
+              <ul>
+                <li>English - C2 Fluent Bilingual</li>
+                <li>French - C2 Fluent Bilingual</li>
+                <li>Portuguese - B1 Intermediate</li>
+              </ul>
+            </ContentCard>
+            <button className={styles.button}>
+              <a
+                href="https://my.indeed.com/p/alexandreg-0orcb4n/pdf"
+                download="alex-gomes-cv"
+              >
+                Download CV
+              </a>
+            </button>
           </div>
           <div className={styles.flexbox}>
             <ContentCard title={"Education"}>
@@ -97,9 +105,15 @@ const About = () => {
               <p>
                 Most of my experience in programming comes from personal
                 projects, course projects, tutorials and freelance projects. I
-                am yet to work as part of a team and have no experience working
-                on any colaborative projects.
+                would like to be part of a team in a dynamic environment.
               </p>
+              <h3>Courses</h3>
+              <ul>
+                <li>Colt Steele - Web Developer Bootcamp</li>
+                <li>Maximillian Schwarzmuller - React Course</li>
+                <li>Mosh Hamedani - Several</li>
+                <li>Harvard Online - CS50 (currently)</li>
+              </ul>
             </ContentCard>
             <ContentCard isImage mgtop={"2rem"}>
               <Avatar

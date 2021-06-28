@@ -1,14 +1,24 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 0.5rem;
-}   
-
-.div {
-    width: 40px;
-    height: 4px;
-    background-color: #f04854;
-    margin: 2px;
-    border-radius: 4px;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
+
+.burger {
+  color: #fff;
+}
+
+.burger:hover .bar{
+  background-color: #f04854;
+  transition: 0.3s;
+}
+
+.bar {
+  width: 60px;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0.5rem 0;
+}
+

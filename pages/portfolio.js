@@ -19,6 +19,7 @@ const Portfolio = () => {
             description={
               "A static website built as a freelance project using React and EmailJS services hosted on Easily."
             }
+            completed={true}
           />
           <ProjectCard
             title={"SoopaShop"}
@@ -27,7 +28,17 @@ const Portfolio = () => {
             description={
               "An e-commerce webapp built with Next.js and Stripe, hosted on netlify styled with Styled Components. Project built from Jon Meyer's tutorial."
             }
+            completed={true}
           />
+          {/* <ProjectCard
+            title={"Patrick Williams Photos"}
+            url={"https://patrick-williams-photos.vercel.app/"}
+            repo_url={"https://github.com/agomesd/patrick-williams-photos/"}
+            description={
+              "Patrick Williams photography blog built with Next.js and Supabase as a backend. Hosted on Vercel."
+            }
+            completed={false}
+          /> */}
         </div>
       </div>
     </div>

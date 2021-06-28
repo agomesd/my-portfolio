@@ -1,6 +1,7 @@
 .container {
   position: relative;
   display: flex;
+  width: 100%;
 }
 
 .image {
@@ -11,8 +12,51 @@
   cursor: pointer;
 }
 
+.image1 {
+  z-index: 100;
+  left: 22%;
+}
+
+.image2 {
+  left: -75px;
+  top: 30px;
+}
+
+.image3 {
+  right: -75px;
+  top: 30px;
+}
+
 .image:hover {
     transform: scale(1.09);
     transition: transform 0.2s ease-in;
+    z-index: 500;
+}
+
+@media (max-width: 599px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100%;
+    position: unset;
+  }
+
+  .image1 {
+    left: 0;
+    top: 0;
+    z-index: 300;
+  }
+
+  .image2 {
+    top: 0;
     z-index: 200;
+  }
+
+  .image3 {
+    top: 0;
+    z-index: 100;
+  }
 }

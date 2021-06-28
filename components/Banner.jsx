@@ -7,9 +7,9 @@ import styles from "../styles/components/Banner.module.css";
 const Banner = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.image} style={{ zIndex: "100", left: "22%" }}>
+      <div className={`${styles.image} ${styles.image1}`}>
         <a
-          href="https://patrickwilliamsphotos.netlify.app"
+          href="https://patrick-williams-photos.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -20,7 +20,7 @@ const Banner = () => {
           />
         </a>
       </div>
-      <div className={styles.image} style={{ left: "-75px", top: "30px" }}>
+      <div className={`${styles.image} ${styles.image2}`}>
         <a href="http://savoieps.com" target="_blank" rel="noopener noreferrer">
           <Avatar
             image={pictureSps}
@@ -29,7 +29,7 @@ const Banner = () => {
           />
         </a>
       </div>
-      <div className={styles.image} style={{ right: "-75px", top: "30px" }}>
+      <div className={`${styles.image} ${styles.image3}`}>
         <a
           href="https://maynooth.netlify.app"
           target="_blank"

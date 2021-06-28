@@ -24,3 +24,19 @@
     color: #fff;
     font-size: 3rem;
 }
+
+.button {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid #f04854;
+  background-color: #f04854;
+}

@@ -3,6 +3,7 @@
   background-image: url("../public/images/michelle-spollen-unsplash.jpg");
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 
 .container {
@@ -17,6 +18,7 @@
 
 .header {
   position: relative;
+  width: 95%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
   border-radius: 6px;
@@ -33,5 +35,18 @@
     flex-direction: column;
     grid-template-columns: 1fr;
     margin: 2rem 0.5rem;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .header {
+    margin: 1rem auto;
+    width: 95%;
+    left: 0 !important;
+    text-align: center;
   }
 }
