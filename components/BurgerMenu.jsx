@@ -8,7 +8,7 @@ const BurgerMenu = ({ isOpen, handleOpenMenu, handleCloseMenu }) => {
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
         </div>
-    </div>
+    </div>  
   );
 };
 

@@ -10,7 +10,7 @@ const Avatar = ({ image, alt, variant }) => {
           : `${styles.container} ${styles.rounded}`
       }
     >
-      <Image src={image} alt={alt} />
+      <Image src={image} alt={alt} placeholder="blur" />
     </div>
   );
 };

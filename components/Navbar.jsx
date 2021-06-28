@@ -9,12 +9,12 @@ const Navbar = () => {
 
   const handleOpenMenu = () => {
     document.getElementById("curtainMenu").style.width = "100%";
-    setIsOpen(false);
+    setIsOpen(true);
   };
 
   const handleCloseMenu = () => {
     document.getElementById("curtainMenu").style.width = "0%";
-    setIsOpen(true);
+    setIsOpen(false);
   };
 
   return (
@@ -38,8 +38,8 @@ const Navbar = () => {
         </div>
         <div className={styles.burgerMenu}>
           <BurgerMenu
-            handleOpenMenu={handleCloseMenu}
-            handleCloseMenu={handleOpenMenu}
+            handleOpenMenu={handleOpenMenu}
+            handleCloseMenu={handleCloseMenu}
             isOpen={isOpen}
           />
         </div>

@@ -30,6 +30,24 @@ const Portfolio = () => {
             }
             completed={true}
           />
+          <ProjectCard
+            title={"Airbnb Clone"}
+            url={"https://gwd-airbnb-clone.netlify.app/"}
+            repo_url={"https://github.com/agomesd/airbnb-clone"}
+            description={
+              "A basic Airbnb clone built with React including landing page and routing. Styled with material-ui and CSS BEM convention."
+            }
+            completed={true}
+          />
+          <ProjectCard
+            title={"Netflix Clone"}
+            url={"https://gwd-netflix-clone.netlify.app/"}
+            repo_url={"https://github.com/agomesd/netflix-clone"}
+            description={
+              "A basic Netflix clone built with React using axios to make an API call populating the movie list. Styled using CSS BEM convention."
+            }
+            completed={true}
+          />
           {/* <ProjectCard
             title={"Patrick Williams Photos"}
             url={"https://patrick-williams-photos.vercel.app/"}
