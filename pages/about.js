@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import ContentCard from "../components/ContentCard";
 import Avatar from "../components/Avatar";
-import picture from "../public/images/my-portrait-patrick-williams.jpg";
+import picture from "../public/images/picture.jpg";
 import skiPicture from "../public/images/alex-gomes-ski.jpg";
 import styles from "../styles/pages/About.module.css";
 
@@ -19,24 +19,14 @@ const About = () => {
         <div className={styles.grid}>
           <ContentCard gcs={"1"} gce={"3"}>
             <p>
-              I've been learning to code for the past year with the use of
-              online courses and tutorials. You can find some of my personal and
+              I'm a self taught web-develop with a focus on creating single page applications with the use of modern Javascript frameworks and libraries. You can find some of my personal and
               freelance projects in the{" "}
               <span>
                 <Link href="/portfolio">
                   <a style={{ color: "#f04854" }}>Portfolio</a>
                 </Link>
               </span>{" "}
-              section of this website. I'm a quick learner and a team player
-              with an open mind to new ideas. I'm looking to join a team that
-              fosters growth and creativity. If I seem to have what you are
-              looking for, please{" "}
-              <span>
-                <Link href="/contact">
-                  <a style={{ color: "#f04854" }}>Get In Touch</a>
-                </Link>
-              </span>
-              . I hope to hear from you soon!
+              section of this website. I love learning and working with people to solve complexe problems.
             </p>
           </ContentCard>
           <div className={styles.flexbox}>
@@ -57,29 +47,31 @@ const About = () => {
             </button>
             <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
               <ul className={styles.list}>
-                <li>HTML</li>
+                <li>HTML 5</li>
                 <li>
-                  CSS{" "}
+                  CSS 3{" "}
                   <ul style={{ listStyle: "outside" }}>
                     <li>BEM</li>
                     <li>CSS Modules</li>
                     <li>Material-UI</li>
                     <li>Styled Components</li>
+                    <li>SASS</li>
                   </ul>
                 </li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Angular</li>
                 <li>React</li>
                 <li>Redux</li>
                 <li>Next.js</li>
                 <li>Node.js</li>
                 <li>Supabase</li>
                 <li>Firebase</li>
-                <li>Express</li>
                 <li>MongoDB</li>
                 <li>MySQL</li>
                 <li>PostgreSQL</li>
                 <li>RESTful API</li>
                 <li>Git</li>
-                <li>Netlify</li>
               </ul>
             </ContentCard>
             <ContentCard title={"Languages"} mgtop={"2rem"}>
@@ -92,26 +84,16 @@ const About = () => {
           </div>
           <div className={styles.flexbox}>
             <ContentCard title={"Education"}>
-              <p>
-                In 2016, I graduated from Concordia University in Montreal with
-                a bachelor's degree in Commerce, majoring in Finance. Before
-                University, I completed a two year vocational program in
-                Automotive Mechanics.
-              </p>
+              <h2>Concordia Univeristy</h2>
+              <p>Montreal, Canada</p>
+              <p>Bachelor's of Commerce - Finance</p>
+              <p>Graduated 2016</p>
             </ContentCard>
             <ContentCard title={"Experience"} mgtop={"2rem"}>
-              <p>
-                Most of my experience in programming comes from personal
-                projects, course projects, tutorials and freelance projects. I
-                would like to be part of a team in a dynamic environment.
-              </p>
-              <h3>Courses</h3>
-              <ul>
-                <li>Colt Steele - Web Developer Bootcamp</li>
-                <li>Maximillian Schwarzmuller - React Course</li>
-                <li>Mosh Hamedani - Several</li>
-                <li>Harvard Online - CS50 (currently)</li>
-              </ul>
+              <h2>Working</h2>
+              <h3>Front-end Developer</h3>
+              <h3>Orcawise</h3>
+              <p>October 2021 - current</p>
             </ContentCard>
             <ContentCard isImage mgtop={"2rem"}>
               <Avatar
@@ -123,7 +105,7 @@ const About = () => {
             <ContentCard title={"Hobbies"} mgtop={"2rem"}>
               <p>
                 Skiing, Ice Hockey, Football, Cooking, Travelling, Reading,
-                Coding
+                Coding, Surfing
               </p>
             </ContentCard>
           </div>

@@ -24,10 +24,10 @@ const Home = () => {
           Web Developer.
         </h1>
         <h2 className={styles.header}>
-          I'm Alex, a full-stack web developer from Montreal Canada currently
-          living in Portugal. This is a website showcasing my portfolio. If you
+          I'm Alex, a web developer from Montreal Canada currently
+          living and working in the UK. This is a website showcasing my work. If you
           like what you see and would like to work with me, please{" "}
-          <span style={{ color: "#f04854" }}>
+          <span>
             <Link href="contact">
               <a>Get in Touch!</a>
             </Link>

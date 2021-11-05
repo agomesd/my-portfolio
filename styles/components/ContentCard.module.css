@@ -4,6 +4,19 @@
     border-radius: 6px;
 }
 
+.container p {
+  margin: 0;
+}
+
+.container h2 {
+  margin: 1rem 0;
+  color: #f04854;
+}
+
+.container h3 {
+  margin: 0;
+}
+
 .header {
     color: #fff;
 }

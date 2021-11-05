@@ -3,11 +3,11 @@ import Footer from "../components/Footer";
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => {
-  
+
   return (
     <>
       <Navbar />
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       <Footer />
     </>
   );
