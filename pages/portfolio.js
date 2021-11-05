@@ -15,7 +15,7 @@ const Portfolio = () => {
         <div className={styles.grid}>
           <ProjectCard
             title={"Savoie Preservation Solutions"}
-            url={"http://savoieps.com/"}
+            url={"https://savoieps.com/"}
             description={
               "A static website built as a freelance project using React and EmailJS services hosted on Easily."
             }
