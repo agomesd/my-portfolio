@@ -45,7 +45,7 @@ const About = () => {
                 Download CV
               </a>
             </button>
-            <ContentCard title={"Skills and Technologies"} mgtop={"2rem"}>
+            <ContentCard title={"Skills and Technologies"}>
               <ul className={styles.list}>
                 <li>HTML 5</li>
                 <li>
@@ -74,7 +74,7 @@ const About = () => {
                 <li>Git</li>
               </ul>
             </ContentCard>
-            <ContentCard title={"Languages"} mgtop={"2rem"}>
+            <ContentCard title={"Languages"}>
               <ul>
                 <li>English - C2 Fluent Bilingual</li>
                 <li>French - C2 Fluent Bilingual</li>
@@ -89,20 +89,20 @@ const About = () => {
               <p>Bachelor's of Commerce - Finance</p>
               <p>Graduated 2016</p>
             </ContentCard>
-            <ContentCard title={"Experience"} mgtop={"2rem"}>
+            <ContentCard title={"Experience"}>
               <h2>Working</h2>
               <h3>Front-end Developer</h3>
               <h3>Orcawise</h3>
               <p>October 2021 - current</p>
             </ContentCard>
-            <ContentCard isImage mgtop={"2rem"}>
+            <ContentCard isImage>
               <Avatar
                 image={skiPicture}
                 alt={"Picture of Alex Skiing"}
                 variant={"rounded"}
               />
             </ContentCard>
-            <ContentCard title={"Hobbies"} mgtop={"2rem"}>
+            <ContentCard title={"Hobbies"}>
               <p>
                 Skiing, Ice Hockey, Football, Cooking, Travelling, Reading,
                 Coding, Surfing
