@@ -37,14 +37,14 @@ const About = () => {
                 variant={"rounded"}
               />
             </ContentCard>
-            <button className={styles.button}>
-              <a
-                href="https://my.indeed.com/p/alexandreg-0orcb4n/pdf"
-                download="alex-gomes-cv"
-              >
-                Download CV
-              </a>
-            </button>
+            <a
+              href="https://my.indeed.com/p/alexandreg-0orcb4n/pdf"
+              download="alex-gomes-cv"
+            >
+              <button className={styles.button}>
+                  Download CV
+              </button>
+            </a>
             <ContentCard title={"Skills and Technologies"}>
               <ul className={styles.list}>
                 <li>HTML 5</li>

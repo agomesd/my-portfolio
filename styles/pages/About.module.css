@@ -37,6 +37,11 @@
   cursor: pointer;
 }
 
+.button a {
+  width: 100%;
+  height: 100%;
+}
+
 .button:hover {
   border: 1px solid #f04854;
   background-color: #f04854;
