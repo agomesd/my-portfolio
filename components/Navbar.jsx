@@ -1,11 +1,15 @@
 import { useState } from "react";
+import { supabase } from '../utils/supabase';
 import CurtainMenu from "./CurtainMenu";
 import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
 import styles from "../styles/components/Navbar.module.css";
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const user = supabase.auth.user();
 
   const handleOpenMenu = () => {
     document.getElementById("curtainMenu").style.width = "100%";
@@ -17,14 +21,21 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleLogout = async () => {
+    let { error } = await supabase.auth.signOut();
+    router.push('/');
+    console.log(error);
+  }
+
   return (
     <>
       <div className={styles.container}>
         <Link href="/">
           <a className={styles.link} onClick={handleCloseMenu}>
-            <h1>Alex Gomes</h1>
+            <h1>Alex | Gomes</h1>
           </a>
         </Link>
+
         <div className={styles.links}>
           <Link href="/about">
             <a>About</a>
@@ -35,6 +46,9 @@ const Navbar = () => {
           <Link href="/contact">
             <a>Contact</a>
           </Link>
+          {user && (
+            <button className={styles.button} onClick={handleLogout}>Logout</button>
+          )}
         </div>
         <div className={styles.burgerMenu}>
           <BurgerMenu

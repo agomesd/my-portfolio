@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  background-color: #f04854;
+  border: 1px solid #f04854;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.input {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}

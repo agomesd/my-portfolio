@@ -1,10 +1,31 @@
+import { useState } from 'react';
 import Head from "next/head";
+import { supabase } from "../utils/supabase";
+import AddProjectForm from "../components/AddProjectForm";
 import ProjectCard from "../components/ProjectCard";
+import Modal from '../components/Modal';
 import styles from "../styles/pages/Portfolio.module.css";
 
-const Portfolio = () => {
+const Portfolio = ({ projects }) => {
+  const [ showModal, setShowModal ] = useState(false);
+  const user = supabase.auth.user();
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  }
+
+  const handleCloseModal = (e) => {
+    e.stopPropagation();
+    setShowModal(false);
+  }
+
   return (
     <div className={styles.portfolio}>
+      {showModal && (
+        <Modal handleCloseModal={handleCloseModal}>
+          <AddProjectForm handleCloseModal={handleCloseModal}/>
+        </Modal>
+      )}
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Alex Gomes projects portfolio" />
@@ -13,54 +34,34 @@ const Portfolio = () => {
       <div className={styles.container}>
         <h1 className={styles.header}>Portfolio.</h1>
         <div className={styles.grid}>
-          <ProjectCard
-            title={"Savoie Preservation Solutions"}
-            url={"https://savoieps.com/"}
-            description={
-              "A static website built as a freelance project using React and EmailJS services hosted on Easily."
-            }
-            completed={true}
-          />
-          <ProjectCard
-            title={"SoopaShop"}
-            url={"https://gwd-ecommerce-next.netlify.app/"}
-            repo_url={"https://github.com/agomesd/jamstack-ecom"}
-            description={
-              "An e-commerce webapp built with Next.js and Stripe, hosted on netlify styled with Styled Components. Project built from Jon Meyer's tutorial."
-            }
-            completed={true}
-          />
-          <ProjectCard
-            title={"Airbnb Clone"}
-            url={"https://gwd-airbnb-clone.netlify.app/"}
-            repo_url={"https://github.com/agomesd/airbnb-clone"}
-            description={
-              "A basic Airbnb clone built with React including landing page and routing. Styled with material-ui and CSS BEM convention."
-            }
-            completed={true}
-          />
-          <ProjectCard
-            title={"Netflix Clone"}
-            url={"https://gwd-netflix-clone.netlify.app/"}
-            repo_url={"https://github.com/agomesd/netflix-clone"}
-            description={
-              "A basic Netflix clone built with React using axios to make an API call populating the movie list. Styled using CSS BEM convention."
-            }
-            completed={true}
-          />
-          {/* <ProjectCard
-            title={"Patrick Williams Photos"}
-            url={"https://patrick-williams-photos.vercel.app/"}
-            repo_url={"https://github.com/agomesd/patrick-williams-photos/"}
-            description={
-              "Patrick Williams photography blog built with Next.js and Supabase as a backend. Hosted on Vercel."
-            }
-            completed={false}
-          /> */}
+          {projects.map(project => (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              imageUrl={project.image_url}
+              url={project.url}
+              repoUrl={project.repo_url}
+              description={project.description}
+              completed={project.completed}
+            />
+          ))}
+          {user && (
+            <button className={styles.addButton} onClick={handleOpenModal}>Add Project +</button>
+          )}
         </div>
       </div>
     </div>
   );
 };
+
+export const getStaticProps = async () => {
+  const { data, error } = await supabase.from('projects').select();
+  const projects = data;
+  return {
+    props: {
+      projects,
+    }
+  }
+}
 
 export default Portfolio;

@@ -9,6 +9,23 @@
     z-index: 200;
 }
 
+.button {
+  margin-left: 1rem;
+  background-color: #f04854;
+  color: rgba(0,0,0, 0.75);
+  border: 2px solid #f04854;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
 .link {
     color: #f04854;
     border-bottom: 4px solid transparent;
@@ -26,6 +43,7 @@
 
 .links {
     display: flex;
+    align-items: center;
 }
 
 .links a {
@@ -47,7 +65,7 @@
     .container {
         padding: 1rem;
     }
-    
+
     .links {
         display: none;
     }
