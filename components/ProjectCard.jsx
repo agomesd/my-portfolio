@@ -8,7 +8,7 @@ const ProjectCard = ({ title, imageUrl, url, description, repoUrl, completed }) 
     <div className={styles.container}>
       <h1 className={styles.header}>{title}</h1>
       <div className={styles.image}>
-        <Image src={imageUrl} alt={`${title} website`} width={400} height={350}/>
+        <Image src={imageUrl} alt={`${title} website`} width={760} height={356}/>
       </div>
       <p className={styles.content}>{description}</p>
       <a href={url} target="_blank" rel="noreferrer noopener">
