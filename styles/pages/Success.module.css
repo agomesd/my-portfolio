@@ -4,16 +4,6 @@
   background-size: cover;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 6rem 0;
-  width: 760px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .textbox {
     margin-top: 6rem;
     background-color: rgba(0,0,0,0.75);
@@ -25,5 +15,3 @@
   color: #fff;
   font-size: 3rem;
 }
-
-

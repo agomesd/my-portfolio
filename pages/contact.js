@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from 'next/head';
 import styles from "../styles/pages/Contact.module.css";
+import common from "../styles/pages/Common.module.css";
 
 const initialState = {
   name: "",
@@ -46,17 +47,17 @@ const Contact = () => {
   };
 
   return (
-    <div className={styles.contact}>
-      <div className={styles.container}>
+    <div className={styles.background}>
+      <div className={common.container}>
       <Head>
-          <title>Get in touch.</title>
+          <title>Contact | Alex Gomes</title>
           <meta
             name="description"
-            content="Alex Gomes contact page"
+            content="My contact page where you can write me a message to get in touch."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1 className={styles.header}>Contact.</h1>
+        <h1 className={common.header}>Contact.</h1>
         <form
           className={styles.form}
           name="contact"

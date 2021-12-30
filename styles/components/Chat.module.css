@@ -1,0 +1,85 @@
+.container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.body {
+  padding: 1rem;
+}
+
+.button {
+  margin-top: 1.5rem;
+  background-color: rgb(96, 255, 135);
+  border: 1px solid rgb(96, 255, 135);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(96, 255, 135);
+  transition: all 0.2s ease-in-out;
+}
+
+.image {
+  border: 2px solid rgb(96, 255, 135);
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+.image:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: all 0.2s ease-in-out;
+}
+
+.chatContainer {
+  width: 350px;
+  min-height: 40vh;
+  background-color: rgba(0,0,0, 0.9);
+  border-radius: 6px;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;padding: 1rem;
+  border-bottom: 1px solid rgb(96, 255, 135);
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  color: #f04854;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}

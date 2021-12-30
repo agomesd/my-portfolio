@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import styles from "../styles/pages/Success.module.css";
+import common from "../styles/pages/Common.module.css";
 
 const Success = () => {
   const redirect = () => {
@@ -17,7 +18,7 @@ const Success = () => {
 
   return (
     <div className={styles.success}>
-      <div className={styles.container}>
+      <div className={common.container}>
       <Head>
           <title>Success!</title>
           <meta

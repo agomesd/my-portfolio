@@ -10,6 +10,7 @@ const ContentCard = ({
   gre,
   mg,
   mgtop,
+  pr
 }) => {
   return (
     <div
@@ -20,7 +21,8 @@ const ContentCard = ({
         gridRowStart: grs,
         gridRowEnd: gre,
         marginTop: mgtop,
-        margin: mg
+        margin: mg,
+        paddingRight: pr
       }}
     >
       {title && <h1 className={styles.header}>{title}</h1>}

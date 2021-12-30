@@ -1,9 +1,9 @@
 import AuthForm from '../components/AuthForm';
-import styles from "../styles/pages/Admin.module.css"
+import common from "../styles/pages/Common.module.css";
 
 const Admin = () => {
   return (
-    <div className={styles.container}>
+    <div className={common.container}>
       <AuthForm />
     </div>
   )

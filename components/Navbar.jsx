@@ -21,6 +21,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+
   const handleLogout = async () => {
     let { error } = await supabase.auth.signOut();
     router.push('/');
@@ -28,7 +29,7 @@ const Navbar = () => {
   }
 
   return (
-    <>
+    <nav>
       <div className={styles.container}>
         <Link href="/">
           <a className={styles.link} onClick={handleCloseMenu}>
@@ -42,6 +43,9 @@ const Navbar = () => {
           </Link>
           <Link href="/portfolio">
             <a>Portfolio</a>
+          </Link>
+          <Link href="/certificates">
+            <a>Certificates</a>
           </Link>
           <Link href="/contact">
             <a>Contact</a>
@@ -59,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
       <CurtainMenu handleClick={handleCloseMenu} />
-    </>
+    </nav>
   );
 };
 

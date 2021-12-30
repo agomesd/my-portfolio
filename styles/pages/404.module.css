@@ -1,21 +1,5 @@
-.pagenotfound {
+.background {
     background-image: url('../../public/images/diego-ph-unsplash.jpg');
     background-position: bottom;
     background-size: cover;
-}
-
-.container {
-    position: relative;
-    margin: 0 auto;
-    padding: 6rem 0;
-    width: 760px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-.header {
-    margin-top: 6rem;
-    color: #f04854;
-    font-size: 3rem;    
 }

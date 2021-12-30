@@ -1,18 +1,9 @@
-.contact {
+.background {
     background-image: url('../../public/images/jonathan-borba-unsplash.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    padding: 6rem 0;
-    width: 760px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
 
 .form {
     background-color: rgba(0,0,0,0.75);
@@ -35,11 +26,6 @@
 
 .textfield::placeholder {
     color: #fff;
-}
-
-.header {
-    color: #fff;
-    font-size: 3rem;
 }
 
 .button {

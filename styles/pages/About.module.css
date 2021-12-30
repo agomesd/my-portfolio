@@ -1,28 +1,18 @@
-.about {
+.background {
   background-image: url("../../public/images/jamshed-khedri-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 6rem 0;
-  width: 760px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.list {
+  height: 500px;
+  overflow-x: auto;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5rem;
-}
-
-.header {
-  color: #fff;
-  font-size: 3rem;
 }
 
 .button {
@@ -45,6 +35,11 @@
 .button:hover {
   border: 1px solid #f04854;
   background-color: #f04854;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {

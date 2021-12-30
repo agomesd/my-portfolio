@@ -2,16 +2,17 @@ import Link from "next/link";
 import Head from "next/head";
 import Banner from "../components/Banner";
 import styles from "../styles/Home.module.css";
+import common from "../styles/pages/Common.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <div className={styles.container}>
+    <div className={styles.background}>
+      <div className={common.container}>
         <Head>
           <title>Alex Gomes</title>
           <meta
             name="description"
-            content="Alex Gomes personal portfolio website"
+            content="My personal website showcasing my portfolio, certificates and my CV as a Web Developer."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -21,7 +22,7 @@ const Home = () => {
             left: "60px",
           }}
         >
-          Web Developer.
+          Front-End Web Developer.
         </h1>
         <h2 className={styles.header}>
           I'm Alex, a web developer from Montreal Canada currently

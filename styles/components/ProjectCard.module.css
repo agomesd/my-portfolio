@@ -35,6 +35,11 @@
     color: #f04854
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .status {
     position: absolute;
     bottom: 1rem;

@@ -1,13 +1,22 @@
 .container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
+    z-index: 9999;
     background-color: transparent;
-    z-index: 200;
+    opacity: 0.35;
+    transition: all 0.5 ease-in-out;
 }
+
+.container:hover {
+  opacity: 1;
+  background-color: rgba( 0,0,0, 0.85);
+  transition: all 0.5s ease-in-out;
+}
+
 
 .button {
   margin-left: 1rem;
@@ -61,6 +70,10 @@
     transition: border 0.3s ease-in;
 }
 
+.burgerMenu {
+  display: none;
+}
+
 @media (max-width: 599px) {
     .container {
         padding: 1rem;
@@ -71,8 +84,8 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .burgerMenu {
-        display: none;
+        display: flex;
     }
 }

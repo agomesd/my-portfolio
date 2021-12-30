@@ -5,6 +5,7 @@ import AddProjectForm from "../components/AddProjectForm";
 import ProjectCard from "../components/ProjectCard";
 import Modal from '../components/Modal';
 import styles from "../styles/pages/Portfolio.module.css";
+import common from "../styles/pages/Common.module.css";
 
 const Portfolio = ({ projects }) => {
   const [ showModal, setShowModal ] = useState(false);
@@ -20,29 +21,24 @@ const Portfolio = ({ projects }) => {
   }
 
   return (
-    <div className={styles.portfolio}>
+    <div className={styles.background}>
       {showModal && (
         <Modal handleCloseModal={handleCloseModal}>
           <AddProjectForm handleCloseModal={handleCloseModal}/>
         </Modal>
       )}
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Alex Gomes projects portfolio" />
+        <title>Portfolio | Alex Gomes</title>
+        <meta name="description" content="My portfolio showcasing some personal and professional projects I have worked on in the past." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <h1 className={styles.header}>Portfolio.</h1>
+      <div className={common.container}>
+        <h1 className={common.header}>Portfolio.</h1>
         <div className={styles.grid}>
-          {projects.map(project => (
+          {projects && projects.map(project => (
             <ProjectCard
               key={project.id}
-              title={project.title}
-              imageUrl={project.image_url}
-              url={project.url}
-              repoUrl={project.repo_url}
-              description={project.description}
-              completed={project.completed}
+              data={project}
             />
           ))}
           {user && (

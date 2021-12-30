@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 10rem 0;
+    width: 760px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+  color: #fff;
+  font-size: 3rem;
+}

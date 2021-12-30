@@ -1,0 +1,17 @@
+.tag {
+  border: 1px solid #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
+  margin: 0.25rem;
+}
+
+.tag:hover {
+  color: #f04854;
+  border-color: #f04854;
+  transform: scale(1.04);
+  transition: all 0.2s ease-in-out;
+}
+
+.tag p {
+  font-size: 1rem;
+}

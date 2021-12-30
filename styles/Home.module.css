@@ -1,19 +1,9 @@
-.home {
+.background {
   position: relative;
   background-image: url("../public/images/michelle-spollen-unsplash.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
-}
-
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 8rem 0;
-  width: 760px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .header {

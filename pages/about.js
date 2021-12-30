@@ -2,20 +2,24 @@ import Link from "next/link";
 import Head from "next/head";
 import ContentCard from "../components/ContentCard";
 import Avatar from "../components/Avatar";
+import Skills from '../components/Skills';
+import Tag from '../components/Tag';
 import picture from "../public/images/picture.jpg";
 import skiPicture from "../public/images/alex-gomes-ski.jpg";
 import styles from "../styles/pages/About.module.css";
+import common from "../styles/pages/Common.module.css";
+import { about } from '../utils/about';
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.background}>
       <Head>
-        <title>About</title>
-        <meta name="description" content="About Alex Gomes Web Developer" />
+        <title>About | Alex Gomes</title>
+        <meta name="description" content="About me / my CV containing information about my education, experience, skills and hobbies." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <h1 className={styles.header}>About.</h1>
+      <div className={common.container}>
+        <h1 className={common.header}>About.</h1>
         <div className={styles.grid}>
           <ContentCard gcs={"1"} gce={"3"}>
             <p>
@@ -45,33 +49,11 @@ const About = () => {
                   Download CV
               </button>
             </a>
-            <ContentCard title={"Skills and Technologies"}>
+            <ContentCard title={"Skills and Technologies"} pr={0}>
               <ul className={styles.list}>
-                <li>HTML 5</li>
-                <li>
-                  CSS 3{" "}
-                  <ul style={{ listStyle: "outside" }}>
-                    <li>BEM</li>
-                    <li>CSS Modules</li>
-                    <li>Material-UI</li>
-                    <li>Styled Components</li>
-                    <li>SASS</li>
-                  </ul>
-                </li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Angular</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Next.js</li>
-                <li>Node.js</li>
-                <li>Supabase</li>
-                <li>Firebase</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>RESTful API</li>
-                <li>Git</li>
+                {about.skills.length > 0 && about.skills.map(skill => (
+                  <Skills data={skill}/>
+                ))}
               </ul>
             </ContentCard>
             <ContentCard title={"Languages"}>
@@ -103,10 +85,11 @@ const About = () => {
               />
             </ContentCard>
             <ContentCard title={"Hobbies"}>
-              <p>
-                Skiing, Ice Hockey, Football, Cooking, Travelling, Reading,
-                Coding, Surfing
-              </p>
+              <ul className={styles.tags}>
+                {about.hobbies.length > 0 && about.hobbies.map(hobby => (
+                  <Tag data={hobby}/>
+                ))}
+              </ul>
             </ContentCard>
           </div>
         </div>
