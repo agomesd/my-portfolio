@@ -5,7 +5,7 @@ const CertificateCard = ({ data }) => {
   return (
     <div>
       <h2 style={{ color: '#f04854' }}>{title}</h2>
-      <Image publicId={image_url} >
+      <Image publicId={image_url} alt={title} >
         <Transformation quality="90" width="760" crop="scale" />
       </Image>
     </div>

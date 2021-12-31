@@ -1,0 +1,20 @@
+.container {
+  background-color: rgba(0,0,0, 0.80);
+  width: 600px;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  padding: 1px 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.container a {
+  color: #f04854;
+}
+
+@media(max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}

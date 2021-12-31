@@ -4,11 +4,13 @@ import ContentCard from "../components/ContentCard";
 import Avatar from "../components/Avatar";
 import Skills from '../components/Skills';
 import Tag from '../components/Tag';
+import CreditTag from '../components/CreditTag';
 import picture from "../public/images/picture.jpg";
 import skiPicture from "../public/images/alex-gomes-ski.jpg";
 import styles from "../styles/pages/About.module.css";
 import common from "../styles/pages/Common.module.css";
 import { about } from '../utils/about';
+import { credits } from '../utils/image-credits';
 
 const About = () => {
   return (
@@ -52,7 +54,7 @@ const About = () => {
             <ContentCard title={"Skills and Technologies"} pr={0}>
               <ul className={styles.list}>
                 {about.skills.length > 0 && about.skills.map(skill => (
-                  <Skills data={skill}/>
+                  <Skills key={skill.id} data={skill}/>
                 ))}
               </ul>
             </ContentCard>
@@ -87,13 +89,14 @@ const About = () => {
             <ContentCard title={"Hobbies"}>
               <ul className={styles.tags}>
                 {about.hobbies.length > 0 && about.hobbies.map(hobby => (
-                  <Tag data={hobby}/>
+                  <Tag key={hobby.id} data={hobby}/>
                 ))}
               </ul>
             </ContentCard>
           </div>
         </div>
       </div>
+      <CreditTag data={credits[2]}/>
     </div>
   );
 };

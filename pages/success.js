@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import Head from 'next/head';
 import Link from 'next/link';
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import CreditTag from '../components/CreditTag';
 import styles from "../styles/pages/Success.module.css";
 import common from "../styles/pages/Common.module.css";
+import { credits } from '../utils/image-credits';
 
 const Success = () => {
   const redirect = () => {
@@ -47,6 +49,7 @@ const Success = () => {
           </p>
         </div>
       </div>
+      <CreditTag data={credits[0]}/>
     </div>
   );
 };

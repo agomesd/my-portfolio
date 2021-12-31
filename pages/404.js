@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import CreditTag from '../components/CreditTag';
 import styles from "../styles/pages/404.module.css";
 import common from "../styles/pages/Common.module.css";
+import { credits } from '../utils/image-credits';
 
 const PageNotFound = () => {
   return (
@@ -16,6 +18,7 @@ const PageNotFound = () => {
         </Head>
         <h1 className={common.header}><span style={{ color: '#fff' }}>404</span> | Page Not Found.</h1>
       </div>
+      <CreditTag data={credits[6]} />
     </div>
   );
 };

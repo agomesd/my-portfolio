@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
 import Banner from "../components/Banner";
+import CreditTag from "../components/CreditTag"
 import styles from "../styles/Home.module.css";
 import common from "../styles/pages/Common.module.css";
+import { credits } from '../utils/image-credits';
 
 const Home = () => {
   return (
@@ -38,6 +40,7 @@ const Home = () => {
           <Banner />
         </div>
       </div>
+      <CreditTag data={credits[1]}/>
     </div>
   );
 };

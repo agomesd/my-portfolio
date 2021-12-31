@@ -3,9 +3,11 @@ import Head from "next/head";
 import { supabase } from "../utils/supabase";
 import AddProjectForm from "../components/AddProjectForm";
 import ProjectCard from "../components/ProjectCard";
+import CreditTag from "../components/CreditTag";
 import Modal from '../components/Modal';
 import styles from "../styles/pages/Portfolio.module.css";
 import common from "../styles/pages/Common.module.css";
+import { credits } from "../utils/image-credits";
 
 const Portfolio = ({ projects }) => {
   const [ showModal, setShowModal ] = useState(false);
@@ -46,6 +48,7 @@ const Portfolio = ({ projects }) => {
           )}
         </div>
       </div>
+      <CreditTag data={credits[3]}/>
     </div>
   );
 };

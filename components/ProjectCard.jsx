@@ -16,7 +16,7 @@ const ProjectCard = ({ data }) => {
       </div>
       <ul className={styles.tags}>
         {stack.length > 0 && stack.map(s => (
-          <Tag data={s}/>
+          <Tag key={s} data={s}/>
         ))}
       </ul>
       <a href={url} target="_blank" rel="noreferrer noopener">

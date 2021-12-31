@@ -12,3 +12,11 @@
   color: #fff;
   font-size: 3rem;
 }
+
+@media(max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+}

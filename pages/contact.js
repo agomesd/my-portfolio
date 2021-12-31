@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Head from 'next/head';
+import CreditTag from '../components/CreditTag';
 import styles from "../styles/pages/Contact.module.css";
 import common from "../styles/pages/Common.module.css";
+import { credits } from '../utils/image-credits';
 
 const initialState = {
   name: "",
@@ -107,6 +109,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <CreditTag data={credits[5]}/>
     </div>
   );
 };
